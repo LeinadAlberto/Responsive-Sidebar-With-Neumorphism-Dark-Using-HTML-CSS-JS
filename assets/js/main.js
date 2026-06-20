@@ -18,3 +18,14 @@ if (sidebarClose) {
 }
 
 /*=============== EXPAND & REDUCE ===============*/
+const sidebarExpand = (toggleId, sidebarId) => {
+    const toggle = document.getElementById(toggleId), 
+          sidebar = document.getElementById(sidebarId)
+
+    toggle.addEventListener('click', () => {
+        // Add sidebar-expand class to sidebar
+        sidebar.classList.toggle('sidebar-expand')
+    })
+}   
+
+sidebarExpand('sidebar-toggle', 'sidebar')
