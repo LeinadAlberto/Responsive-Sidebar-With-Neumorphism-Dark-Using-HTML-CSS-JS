@@ -224,9 +224,10 @@ a {
 	opacity: 1;
 }
 
-
 /* Show sidebar */
-
+.show-sidebar {
+	left: 0;
+}
 
 /*=============== BREAKPOINTS ===============*/
 /* For large devices <> */
